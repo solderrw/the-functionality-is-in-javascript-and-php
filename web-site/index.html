@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wanderlust Adventures</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="css/styleMessger.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body
+        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
+    >
+        <!--navbar-->
+        <nav class="navbar glass" style="height: 70px">
+            <span
+                ><a href="/index.html#home" style="display: flex; align-items: center"
+                    ><img
+                        class="img2"
+                        src="./img/mountain.png"
+                        width="40"
+                        style="margin: -25px -10px -25px -20px"
+                    />
+                    <h1 class="logo">&nbsp;Wanderlust Adventures</h1></a
+                ></span
+            >
+            <ul class="nav-links">
+                <li>
+                    <a href="/index.html#home" id="pri" class="active cir_border">Главная</a>
+                </li>
+                <li><a href="/index.html#events" id="sec" class="cir_border">События</a></li>
+                <li>
+                    <a href="/index.html#explore" id="tri" class="cir_border">Изучения</a>
+                </li>
+                <li>
+                    <a href="/index.html#tours" id="quad" class="cir_border">Туры</a>
+                </li>
+                <li><a href="/index.html#about" id="quint" class="cir_border">О нас</a></li>
+                <li>
+                    <a href="/index.html#contact" id="hept" class="cir_border">Связь с нами</a>
+                </li>
+                <li>
+                    <div>
+                        <input
+                            type="checkbox"
+                            class="checkbox dark"
+                            id="checkbox"
+                        />
+                        <label for="checkbox" class="label">
+                            <i class="fa fa-moon-o"></i>
+                            <i class="fa fa-sun-o"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+        </nav>
+        <!--navbar-->
+
+        <header id="home">
+            <div class="header-content">
+                <h2 id="quote">Исследуйте красочный мир</h2>
+                <div class="line"></div>
+                <h1>ПРЕКРАСНЫЙ ПОДАРОК</h1>
+                <a
+                    href="#explore"
+                    class="ctn"
+                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+                    >Узнать больше</a
+                >
+            </div>
+        </header>
+
+        <!--Events-->
+        <section class="events" id="events">
+            <div class="container">
+                <div class="title">
+                    <h1 class="dark">Предстоящие события</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="row">
+                    <article class="card col">
+                        <img class="card-img" src="./img/img1.jfif" />
+                        <h4 class="dark">Поход в лагерь на Эвересте</h4>
+                        <p class="font-color">
+                            Поход в базовый лагерь на Эвересте, без сомнения, является одним из
+                            самых известных туристических направлений в мире.
+                        </p>
+                        <a href="/All-details.html" class="ctn">Все детали</a>
+                    </article>
+                    <article class="card col">
+                        <img src="./img/img2.jfif" />
+                        <h4 class="dark">Пешеходные каникулы</h4>
+                        <p class="font-color">
+                            Присоединяйтесь к небольшим групповым прогулкам с гидом, наслаждайтесь захватывающими походами или выберите роскошную частную прогулку, организованную специально для вас.
+
+                        </p>
+                        <a href="/All-details.html" class="ctn">Все детали</a>
+                    </article>
+                    <article class="card col">
+                        <img src="./img/img8.jpg" />
+                        <h4 class="dark">Андаманские пляжи</h4>
+                        <p class="font-color">
+                            Дайвинг на Андаманских пляжах - это нечто исключительное. Прибрежный
+                            окрестности пояса - один из богатейших коралловых рифов
+                            экосистемы в мире.
+                        </p>
+                        <a href="/All-details.html" class="ctn">Все детали</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--Events-->
+
+        <!--Explore-->
+        <section class="explore" id="explore">
+            <div class="explore-content">
+                <h1>ИССЛЕДУЙТЕ МИР</h1>
+                <div class="line"></div>
+                <p>
+                    “Путешествия делают человека скромнее. Вы видите, какое крошечное место вы занимаете в этом мире”. – Гюстав Флобер. <br />Знакомство с окружающим миром
+                    заставит вас захотеть собрать все свои вещи в рюкзак, взять книгу, забронировать билет и улететь.
+                </p>
+                <a href="https://rsport.ria.ru/20230125/turizm-1847090271.html" class="ctn">Исследуйте больше</a>
+            </div>
+        </section>
+        <!--Explore-->
+
+        <!--tours-->
+        <section class="tours" id="tours">
+            <div class="container row">
+                <div class="col content-col">
+                    <h1 class="font-color">ПРЕДСТОЯЩИЙ ТУРИСТ & МЕСТО НАЗНАЧЕНИЯ</h1>
+                    <div class="line"></div>
+                    <p>
+                        Ср. 28 сентября 2023 : Экскурсия по городу Порт-оф-Спейн и обзорная экскурсия по форту "Птичий глаз". <br />
+                        Сб, 1 октября 2023 : Экскурсия по пещерам Гаспари.<br />
+                        Вт, 4 октября 2023 : Экскурсия по Северному побережью Тринидада.
+                        <br />
+                        и многое другое......
+                    </p>
+                  
+                </div>
+                <div class="image-col">
+                    <div class="image-gallery">
+                        <img src="./img/img3.png" alt="" />
+                        <img src="./img/img4.png" alt="" />
+                        <img src="./img/img5.png" alt="" />
+                        <img src="./img/img6.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <br /><br /><br /><br />
+        </section>
+        <!--tours-->
+
+        <!-- About -->
+        <section id="about">
+            <div class="title">
+                <h1 class="font-color">О нас</h1>
+                <div class="line"></div>
+            </div>
+            <br />
+            <div id="about_us">
+                <div class="boxx">
+                    <div class="containerx">
+                        <input type="radio" name="slider" id="item-1" checked />
+                        <input type="radio" name="slider" id="item-2" />
+                        <input type="radio" name="slider" id="item-3" />
+                        <div class="cards">
+                            <label class="cardt" for="item-1" id="col-img-1">
+                                <img src="./img/carousel-img4.jpg" />
+                            </label>
+                            <label class="cardt" for="item-2" id="col-img-2">
+                                <img src="./img/carousel-img5.jpg" />
+                            </label>
+                            <label class="cardt" for="item-3" id="col-img-3">
+                                <img src="./img/carousel-img6.jpg" />
+                            </label>
+                            
+                        </div>
+                    </div>
+                    <span id="about-quad"
+                        ><a href="https://www.google.co.tz/maps/@53.1418912,30.608109,4.25z?entry=ttu"
+                            ><center>
+                                <h1
+                                    style="
+                                        font-family: var(--ff-montserrat);
+                                        color: white;
+                                    "
+                                >
+                                Найди это
+                                </h1>
+                                <br />
+                                <img
+                                    class="img2"
+                                    src="./img/mountain_dark.jpg"
+                                    width="200"
+                                    style="border-radius: 12%"
+                                />
+                                <br />
+                                <h1 class="logo" style="font-size: 50px">
+                                    Wanderlust Adventures
+                                </h1>
+                            </center>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+
+        <!-- contact -->
+        <section id="contact">
+            <div class="title">
+                <h1 class="font-color">Связь с нами</h1>
+                <div class="line"></div>
+            </div>
+            <div class="contact_us">
+                            <form id="bookingForm1" class="cform"  action="Messager.php" method="post">
+                <div class="crow-message">
+                    <h1 class="color">Отправить нам сообщение</h1>
+                    <div></div>
+                </div>
+                <div class="crow-in">
+                    <input type="text" id="name" name="name" placeholder="Имя" required />
+                    <input type="text" id="email" name="email" placeholder="Email" required />
+                </div>
+                <div class="crow">
+                    <div class="ccol-left">
+                        <select name="country" id="country" required>
+                            <option value="India">Индия</option>
+                            <option value="Russia">Россия</option>
+                            <option value="usa">США</option>
+                            <option value="Japan">Япония</option>
+                            <option value="France">Франция</option>
+                            <option value="Brazil">Бразилия</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="crow">
+                    <div class="ccol-left">
+                        <textarea id="remarks" name="remarks" placeholder="Ваше сообщение....." style="height: 150px" required></textarea>
+                    </div>
+                </div>
+                <input class="crow-s" type="submit" value="Отправить" />
+            </form>
+
+
+                
+                    <!-- Модальное окно -->
+                    <div id="myModal" class="modal" style="display: none;">
+                        <div class="modal-content">
+                          
+                            <p id="modalMessage">Запись была успешно отправлена. Ждите ответа.</p>
+                            <button id="closeBtn">Замечательно</button>
+                        </div>
+                    </div>
+    
+    
+                <div class="cbox">
+                    <div>
+                        <p class="cbox-message">
+                            Предпочитаете какой-то другой способ?<br />Свяжитесь с нами, используя
+                            информацию, указанную ниже
+                        </p>
+                        <div class="cbox-line"></div>
+                    </div>
+                    <div class="c_boxx">
+                        <a href="mailto:clokinds@mail.ru"
+                            ><i class="fa fa-envelope"></i>
+                            Email: clokinds@mail.ru
+                        </a>
+                    </div>
+                    <div class="c_boxx">
+                        <a href="tel:+79998904254"
+                            ><i class="fa fa-phone"></i>
+                            Телефон: (+7) 999-890-42-54
+                        </a>
+                    </div>
+                    <div class="c_boxx">
+                        <a href="https://yandex.ru/maps/org/pro_mountain_pokhody_v_gory/115709841163/?ll=61.450507%2C55.153955&mode=search&sll=61.417548%2C55.153955&sspn=0.275345%2C0.094956&text=туризм&z=13"
+                            ><i class="fa fa-map-marker"></i>
+                            Местоположение: Челябинск,Россия
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact  -->
+        <!-- up scroll -->
+        <i class="arrow"  onclick="topFunction()" id="upbtn"></i>
+        <!-- end -->
+        <!--footer-->
+        <section class="footer">
+            <span
+                >
+            </span
+            >
+        </section>
+        <!--footer-->
+
+        <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navlinks = document.querySelector(".nav-links");
+
+            menuBtn.addEventListener("click", () => {
+                navlinks.classList.toggle("mobile-menu");
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/MessagerScript.js"></script>
+    </body>
+</html>

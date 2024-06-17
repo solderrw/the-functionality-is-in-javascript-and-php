@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бронирование: Поход в лагерь на Эвересте</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/DetailsStyle.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="manifest" href="index.html" />
+</head>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+    <nav class="navbar glass" style="height: 70px">
+            <span
+                ><a href="/index.html#home" style="display: flex; align-items: center"
+                    ><img
+                        class="img2"
+                        src="./img/mountain.png"
+                        width="40"
+                        style="margin: -25px -10px -25px -20px"
+                    />
+                    <h1 class="logo logo-small">&nbsp;Wanderlust Adventures</h1></a
+                ></span
+            >
+            <ul class="nav-links">
+                <li>
+                    <a href="/index.html#home" id="pri" class="cir_border">Главная</a>
+                </li>
+                <li><a href="/index.html#events" id="sec" class="active cir_border">События</a></li>
+                <li>
+                    <a href="/index.html#explore" id="tri" class="cir_border">Изучения</a>
+                </li>
+                <li>
+                    <a href="/index.html#tours" id="quad" class="cir_border">Туры</a>
+                </li>
+                <li><a href="/index.html#about" id="quint" class="cir_border">О нас</a></li>
+                <li>
+                    <a href="/index.html#contact" id="hept" class="cir_border">Связь с нами</a>
+                </li>
+               
+            </ul>
+            <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+        </nav>
+
+    <form id="bookingForm" action="submit_booking.php" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="participants">Количество участников:</label>
+        <input type="number" id="participants" name="participants" required><br>
+        <label for="tour">Выберите тур:</label>
+        <select id="tour" name="tour" required>
+            <option value="" disabled selected>Выберите тур</option>
+            <option value="Поход в лагерь на Эвересте">Поход в лагерь на Эвересте</option>
+            <option value="Поход в лагерь на Аннапурну">Поход в лагерь на Аннапурну</option>
+            <option value="Экскурсия по Долине Лангтанг">Экскурсия по Долине Лангтанг</option>
+            <!-- Добавьте другие туры здесь -->
+        </select><br>
+        <label for="remarks">Дополнительные замечания:</label>
+        <textarea id="remarks" name="remarks"></textarea><br>
+        <input type="submit" class="ctn" value="Отправить заявку">
+    </form>
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            
+            <p id="modalMessage">Запись была успешно отправлена. Ждите ответа.</p>
+            <button id="closeBtn">Замечательно</button>
+        </div>
+    </div>
+<script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navlinks = document.querySelector(".nav-links");
+
+            menuBtn.addEventListener("click", () => {
+                navlinks.classList.toggle("mobile-menu");
+            });
+        </script>
+    <script src="js/submit.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>
